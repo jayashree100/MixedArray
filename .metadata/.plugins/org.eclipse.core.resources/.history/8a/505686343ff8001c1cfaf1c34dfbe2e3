@@ -1,0 +1,17 @@
+package com.addressbook;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Enter your choice");
+		int ch =scanner.nextInt();
+		
+		AddressBook book = new AddressBook();
+		book.add();
+
+	}
+
+}

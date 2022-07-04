@@ -1,0 +1,45 @@
+package com.addressbook;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Scanner;
+
+public class AddressBook {
+	
+	List<Person> person = new ArrayList<>();
+	Map<String ,ArrayList<Person>> personList = new HashMap<String,ArrayList<Person>>();
+
+	
+	public void add() {
+		Scanner scanner = new Scanner(System.in);
+		Person persons = new Person();
+		System.out.println("Enter the first name");
+		String firstName = scanner.nextLine();
+		persons.setFirstName(firstName);
+		System.out.println("Enter the last name");
+		String lastName = scanner.nextLine();
+		persons.setLastName(lastName);
+		System.out.println("Enter the city");
+		String city = scanner.nextLine();
+		persons.setCity(city);
+		System.out.println("Enter the state name");
+		String state = scanner.nextLine();
+		persons.setState(state);
+		System.out.println("Enter the zip code");
+		int zip = scanner.nextInt();
+		persons.setZip(zip);
+		System.out.println("Enter the phone number name");
+		long phoneNumber = scanner.nextLong();
+		persons.setPhoneNumber(phoneNumber);
+		
+		person.add(persons);
+	
+	
+	
+	
+	
+	
+	}
+}

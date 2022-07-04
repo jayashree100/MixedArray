@@ -1,0 +1,25 @@
+package com.bridge.ObserverDesign;
+
+public class Subscriber {
+	private String name;
+	private Channel channel;
+	
+	Subscriber(){
+		
+	}
+	
+	public Subscriber(String name) {
+		super();
+		this.name = name;
+	}
+
+	
+	public void update() {
+		System.out.println( "Hi  "  +name+  " video uploaded");
+	}
+	
+	public void subscribeChannel(Channel ch) {
+		channel = ch;
+	}
+
+}

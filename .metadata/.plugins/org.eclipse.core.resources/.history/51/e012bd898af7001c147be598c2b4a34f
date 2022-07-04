@@ -1,0 +1,38 @@
+package com.collection;
+
+import java.util.List;
+import java.util.ArrayList;
+
+public class ArrayListPractice {
+	String name;
+	int id;
+	double salary;
+	
+	
+
+	public ArrayListPractice(String name, int id, double salary) {
+		super();
+		this.name = name;
+		this.id = id;
+		this.salary = salary;
+	}
+
+	
+
+
+	@Override
+	public String toString() {
+		return "ArrayListPractice [name=" + name + ", id=" + id + ", salary=" + salary + "]";
+	}
+
+
+
+
+	public static void main(String[] args) {
+		List list = new ArrayList();
+		ArrayListPractice pra = new ArrayListPractice("jaya",101,20000.00);
+		System.out.println(list.add(pra));
+
+	}
+
+}

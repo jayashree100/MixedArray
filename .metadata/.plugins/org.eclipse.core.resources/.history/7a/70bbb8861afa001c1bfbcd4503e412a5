@@ -1,0 +1,18 @@
+package com.practice;
+
+public class ArrayPracice {
+	int num = 1;
+	public void arrayType(Object[] arr) {
+		for(int i = num; num<=arr.length;i++) {
+			System.out.println(arr[num]);
+		}
+	}
+
+	public static void main(String[] args) {
+		Object arr[] = {10,20,30,"jaya",10.0f};
+		ArrayPracice  pract = new ArrayPracice();
+		pract.arrayType(arr);
+
+	}
+
+}

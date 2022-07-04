@@ -1,0 +1,9 @@
+package com.bridge.ObserverDesign;
+
+public interface Observer {
+
+	void update();
+
+	void subscribeChannel(Channel ch);
+
+}

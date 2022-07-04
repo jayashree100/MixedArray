@@ -1,0 +1,24 @@
+package com.bridge.ObserverDesign;
+
+public class YouTube {
+
+	public static void main(String[] args) {
+		Channel channel = new Channel();
+		Subscriber subsciber3 = new Subscriber("jaya");
+		Subscriber subsciber1 = new Subscriber("kavya");		
+		Subscriber subsciber4 = new Subscriber("sunil");
+		Subscriber subsciber2 = new Subscriber("priya");
+
+		Subscriber subsciber = new Subscriber("swathi");
+	
+			channel.subscriber(subsciber1);
+			channel.subscriber(subsciber2);
+			channel.subscriber(subsciber3);
+			channel.subscriber(subsciber4);
+			
+			
+
+
+	}
+
+}

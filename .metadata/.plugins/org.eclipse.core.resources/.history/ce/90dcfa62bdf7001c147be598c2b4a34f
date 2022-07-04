@@ -1,0 +1,10 @@
+package com.addressbook;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class AddressBook {
+	
+	List<Person> person = new ArrayList<>();
+
+}

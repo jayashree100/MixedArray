@@ -1,0 +1,57 @@
+package com.bridge;
+
+import java.lang.reflect.Array;
+import java.util.List;
+import java.util.Objects;
+
+public class Main {
+	public Object[] foo(Object arr[]) {
+	    return new Object[] {};
+	}
+	
+	
+	public static void main(String[] args) {
+		Object[] arr = {"jaya","kavya","preethi",1,2,3,4,10.0,20.0f};
+		Main main = new Main();
+		main.foo(arr);
+		
+        for(int i = 0; i<arr.length;i++) {
+        	//System.out.println(arr[i]);	
+        	if(arr[i] instanceof Integer) {
+        		System.out.println(arr[i]);
+        		
+        	}
+        	else if(arr[i] instanceof String) {
+    			System.out.println("this is the instance of String : " +arr[i]);
+
+              	}
+    		else {
+    				System.out.println("this is instance of float:"  +arr[i]);
+    	
+    		}
+
+        }
+			
+				
+			
+			
+		
+	for(Object obj : arr) {
+		//System.out.println(obj.getClass());
+		
+			//System.out.println("this is the instance of Integer: " +obj	);
+			
+			if(obj instanceof Integer) {
+				//System.out.println("this is instance of Integer: " +obj);
+				   //Integer[] integerArray = (Integer)
+			          
+			        }
+				
+			}
+	}
+}	
+	
+
+	
+
+

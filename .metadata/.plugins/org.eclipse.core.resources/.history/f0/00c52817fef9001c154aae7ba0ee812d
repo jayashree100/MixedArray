@@ -1,0 +1,29 @@
+package com.bridge;
+
+public class Main {
+	
+	
+	public static void main(String[] args) {
+		Object[] arr = {"jaya","kavya","preethi",1,2,3,4,10.0,20.0f};
+		Integer res = " ";
+	for(Object o: arr) {
+		//System.out.println(o.getClass());
+		if(o instanceof Integer) {
+			//System.out.println("this is the instance of Integer: " +o);
+			res = (Integer) o;
+			System.out.println(res);
+			}
+		else if(o instanceof String) {
+			///System.out.println("this is the instance of String : " +o);
+
+}
+		else
+			System.out.println("this is instance of float:"  +o);
+	}
+		
+	}
+	}
+
+	
+
+
